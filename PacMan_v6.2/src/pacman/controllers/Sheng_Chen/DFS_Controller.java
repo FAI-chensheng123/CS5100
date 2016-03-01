@@ -42,6 +42,7 @@ public class DFS_Controller extends Controller<Constants.MOVE>{
             Game gameATM = gameCopy;
             gameATM.advanceGame(m, ghosts.getMove(gameATM, timeDue));
 
+            // Decide if pacman hit the wall
             if (gameATM.getPacmanCurrentNodeIndex() == game.getPacmanCurrentNodeIndex()) {
                 System.out.println("Hit the wall");
                 continue;
@@ -94,6 +95,7 @@ public class DFS_Controller extends Controller<Constants.MOVE>{
             Game gameCopy = pacManNode.gameState.copy();
             gameCopy.advanceGame(m, ghosts.getMove(gameCopy, 0));
 
+            // Decide pacman hit the wall
             if (gameCopy.getPacmanCurrentNodeIndex() == gameState.gameState.getPacmanCurrentNodeIndex()) {
                 continue;
             } else {

@@ -11,9 +11,7 @@ import java.util.EnumMap;
 import java.util.Random;
 import pacman.controllers.Controller;
 import pacman.controllers.HumanController;
-import pacman.controllers.KeyBoardInput;
-import pacman.controllers.Sheng_Chen.BFS_Controller;
-import pacman.controllers.Sheng_Chen.DFS_Controller;
+import pacman.controllers.Sheng_Chen.*;
 import pacman.controllers.examples.*;
 import pacman.game.Game;
 import pacman.game.GameView;
@@ -55,7 +53,7 @@ public class Executor
 		//run the game in asynchronous mode.
 		boolean visual=true;
 //		exec.runGameTimed(new NearestPillPacMan(),new AggressiveGhosts(),visual);
-		exec.runGameTimed(new DFS_Controller(), new StarterGhosts(),visual);
+		exec.runGameTimed(new HillClimbing_Controller(), new StarterGhosts(),visual);
 //		exec.runGameTimed(new HumanController(new KeyBoardInput()),new StarterGhosts(),visual);
 		//*/
 		
