@@ -11,7 +11,7 @@ import java.util.*;
 /**
  *  @Title Hmk2, CS5100/4100 Artificial Intelligence, Hill-climbing
  *  @Author Sheng Chen
- *  @Date 2/23/2016
+ *  @Date 3/1/2016
  */
 public class HillClimbing_Controller extends Controller{
 

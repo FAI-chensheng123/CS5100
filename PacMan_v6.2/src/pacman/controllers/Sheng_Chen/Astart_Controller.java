@@ -14,7 +14,7 @@ import java.util.Random;
 /**
  *  @Title Hmk2, CS5100/4100 Artificial Intelligence, A-star Search
  *  @Author Sheng Chen
- *  @Date 2/9/2016
+ *  @Date 3/1/2016
  */
 public class Astart_Controller extends Controller<MOVE> {
 
