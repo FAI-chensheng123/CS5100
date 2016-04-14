@@ -9,8 +9,9 @@ import pacman.game.Constants.MOVE;
 import pacman.game.NextGraphNode;
 
 /**
- * Q - Learning Algorithm
- * Created by shengchen on 4/12/16.
+ *  @Title Hmk4, CS5100/4100 Artificial Intelligence, Q Learning Algorithm
+ *  @Author Sheng Chen
+ *  @Date 4/12/2016
  */
 public class QLearning_Controller extends Controller{
 
