@@ -31,6 +31,7 @@ public class AlphaBeta_Controller extends Controller<Constants.MOVE> {
 
         int highSorce = -1;
         Constants.MOVE highMove = allMoves[new Random().nextInt(allMoves.length)];
+        // pacMan will move first
         int currHightSocre = alphaBeta(game, 7, (int)alpha, (int)beta, true, timeDue);
 
         for (Constants.MOVE m : allMoves) {

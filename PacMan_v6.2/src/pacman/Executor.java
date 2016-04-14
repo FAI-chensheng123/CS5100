@@ -11,6 +11,7 @@ import java.util.EnumMap;
 import java.util.Random;
 import pacman.controllers.Controller;
 import pacman.controllers.HumanController;
+import pacman.controllers.KeyBoardInput;
 import pacman.controllers.Sheng_Chen.*;
 import pacman.controllers.examples.*;
 import pacman.game.Game;
@@ -52,8 +53,8 @@ public class Executor
 		///*
 		//run the game in asynchronous mode.
 		boolean visual=true;
-//		exec.runGameTimed(new NearestPillPacMan(),new AggressiveGhosts(),visual);
-		exec.runGameTimed(new AlphaBeta_Controller(), new StarterGhosts(),visual);
+		//exec.runGameTimed(new NearestPillPacMan(),new AggressiveGhosts(),visual);
+		exec.runGameTimed(new QLearning_Controller(), new StarterGhosts(),visual);
 //		exec.runGameTimed(new HumanController(new KeyBoardInput()),new StarterGhosts(),visual);
 		//*/
 		
@@ -160,7 +161,9 @@ public class Executor
 				
 		new Thread(pacManController).start();
 		new Thread(ghostController).start();
-		
+
+
+
 		while(!game.gameOver())
 		{
 			pacManController.update(game.copy(),System.currentTimeMillis()+DELAY);

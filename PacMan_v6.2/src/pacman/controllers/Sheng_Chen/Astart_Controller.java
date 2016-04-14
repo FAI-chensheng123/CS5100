@@ -29,7 +29,7 @@ public class Astart_Controller extends Controller<MOVE> {
     @Override
     public MOVE getMove(Game game, long timeDue) {
 
-        Random random = new Random();
+        //sRandom random = new Random();
         MOVE[] allMoves = MOVE.values();
 
         int highSorce = -1;

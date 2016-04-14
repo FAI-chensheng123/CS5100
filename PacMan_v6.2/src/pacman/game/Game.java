@@ -349,10 +349,15 @@ public final class Game
 	 * @param ghostMoves The moves supplied by the ghosts controller
 	 */	
 	public void advanceGame(MOVE pacManMove,EnumMap<GHOST,MOVE> ghostMoves)
-	{		
+	{
+		// record the game states
+		Recorder r = new Recorder();
+		r.printGameInfo(this, pacManMove);
+
 		updatePacMan(pacManMove);
 		updateGhosts(ghostMoves);	
 		updateGame();
+
 	}
 	
 	public void advanceGameWithoutReverse(MOVE pacManMove,EnumMap<GHOST,MOVE> ghostMoves)

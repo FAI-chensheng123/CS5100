@@ -20,13 +20,13 @@ public class HillClimbing_Controller extends Controller{
     @Override
     public Constants.MOVE getMove(Game game, long timeDue) {
 
-        Random random = new Random();
+        // Random random = new Random();
         Constants.MOVE[] allMoves = Constants.MOVE.values();
 
         int highSorce = -1;
         Constants.MOVE highMove = null; // Start State
 
-        int[] a = new int[5];
+        //int[] a = new int[5];
         HashMap<MOVE, Integer> map = new HashMap<>();
         HashMap<Integer,MOVE> map2 = new HashMap<>();
 

@@ -137,3 +137,4 @@ public abstract class Controller<T> implements Runnable
 	 */
 	public abstract T getMove(Game game,long timeDue);
 }
+
